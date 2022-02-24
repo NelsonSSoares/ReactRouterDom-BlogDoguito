@@ -1,6 +1,8 @@
 import React from "react";
 import imagem from '../assets/img/doguito.svg'
 import '../assets/css/componentes/cabecalho.css'
+import { Link } from "react-router-dom";
+
 const Navbar = () =>{
     return(
         <header className="cabecalho container">
@@ -18,19 +20,19 @@ const Navbar = () =>{
                 <ul className="menu-itens">
 
                     <li>
-                        <a href="#" className="menu-item menu-item--entrar">Entrar</a>
+                        <Link to="#" className="menu-item menu-item--entrar">Entrar</Link>
                     </li>
 
                     <li>
-                        <a href="#" className="menu-item">Produtos</a>
+                        <Link to="#" className="menu-item">Produtos</Link>
                     </li>
 
                     <li>
-                        <a href="/" className="menu-item">Blog</a>
+                        <Link to="/" className="menu-item">Blog</Link>
                     </li>
 
                     <li>
-                        <a href="/sobre" className="menu-item">Sobre</a>
+                        <Link to="/sobre" className="menu-item">Sobre</Link>
                     </li>
 
                 </ul>
