@@ -5,7 +5,7 @@ import Home from './paginas/Home';
 import Sobre from './paginas/Sobre';
 import PaginaError404 from './paginas/PaginaError404';
 import Navbar from './components/Navbar';
-
+import Post from './paginas/Post'
 function App() {
 
   return (
@@ -18,6 +18,10 @@ function App() {
           </Route>
 
           <Route path='/sobre'>
+            <Sobre />
+          </Route>
+
+          <Route path='/posts/:id'>
             <Sobre />
           </Route>
 
