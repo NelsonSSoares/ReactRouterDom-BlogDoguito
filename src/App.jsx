@@ -6,6 +6,7 @@ import Sobre from './paginas/Sobre';
 import PaginaError404 from './paginas/PaginaError404';
 import Navbar from './components/Navbar';
 import Post from './paginas/Post'
+import Categoria from './paginas/Categorias';
 function App() {
 
   return (
@@ -19,6 +20,10 @@ function App() {
 
           <Route path='/sobre'>
             <Sobre />
+          </Route>
+
+          <Route path='/categoria/:id'>
+            <Categoria />
           </Route>
 
           <Route path='/posts/:id'>
