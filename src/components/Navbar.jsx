@@ -10,10 +10,10 @@ const Navbar = () =>{
                 <span className="menu-hamburger__icone"></span>
             </div>
             <div className="cabecalho-container">
-                <a href="/" className="flex flex--centro">
+                <Link to="/" className="flex flex--centro">
                     <img className="cabecalho__logo" src={imagem} alt="" />
                     <h1 className="cabecalho__titulo">PetShop</h1>
-                </a>
+                </Link>
             </div>
 
             <nav className="menu-cabecalho">
